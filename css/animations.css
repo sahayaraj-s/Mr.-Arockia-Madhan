@@ -1,0 +1,109 @@
+/* ==========================================================================
+   ANIMATIONS & KEYFRAMES
+   ========================================================================== */
+
+/* Ambient Orb Floating */
+@keyframes floatOrb {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(60px, -40px) scale(1.1);
+  }
+  100% {
+    transform: translate(-40px, 60px) scale(0.95);
+  }
+}
+
+/* Floating Avatar Tech Chips */
+@keyframes floatChip {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(1.5deg);
+  }
+  100% {
+    transform: translateY(6px) rotate(-1.5deg);
+  }
+}
+
+/* Emerald Pulse Ring */
+@keyframes pulseEmerald {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+/* Typewriter Cursor Blinking */
+@keyframes blinkCursor {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Skill Progress Bar Shimmer */
+@keyframes shimmerBar {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+/* Subtle Card Glow Movement */
+@keyframes cardGlowShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Wave Floating for Decorative Items */
+@keyframes subtleFloat {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: subtleFloat 4s ease-in-out infinite;
+}
+
+/* Spin Animation for Reload or Rotating Elements */
+@keyframes spinClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-slow {
+  animation: spinClockwise 20s linear infinite;
+}
